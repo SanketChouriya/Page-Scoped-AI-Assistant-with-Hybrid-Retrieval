@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+venv/
+.env
+.env.*
+
+# Django
+*.log
+db.sqlite3
+local_settings.py
+media/
+staticfiles/
+
+# Migrations (keep __init__.py)
+**/migrations/
+!**/migrations/__init__.py
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Celery / Redis
+celerybeat-schedule
+
+# VS Code and Claud Code
+.claude
+.vscode
