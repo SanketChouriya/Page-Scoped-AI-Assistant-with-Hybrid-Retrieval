@@ -6,7 +6,14 @@ from openai import OpenAI
 from chatbot_conf.settings import OPENAI_API_KEY
 
 logger = logging.getLogger(__name__)
-client = OpenAI(api_key=OPENAI_API_KEY)
+
+# LLM client with timeout guardrail
+LLM_TIMEOUT_SECONDS = 30
+
+client = OpenAI(
+    api_key=OPENAI_API_KEY,
+    timeout=LLM_TIMEOUT_SECONDS,
+)
 
 
 SYSTEM_PROMPT = """
